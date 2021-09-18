@@ -63,7 +63,7 @@ $response = $correios->freight()
     ->origin('01001-000')
     ->destination('73100‑020')
     ->services(FreightType::SEDEX, FreightType::PAC)
-    ->item(16, 16, 16, .3, 1);
+    ->item(16, 16, 16, .3, 1)->calculate();
     
     
 /** result
