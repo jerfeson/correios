@@ -26,7 +26,7 @@ This library facilitates the integration with the Correios delivery services of 
 ### Consult address by zip code
 
 ``` php
-use Correios\Correios;
+use Jerfeson\Correios;
 
 require 'vendor/autoload.php';
 
@@ -53,7 +53,7 @@ $repsonse = $correios->address()->find("73100‑020");
 Calculate prices and terms of delivery services (Sedex, PAC and etc), with `support for multiple objects` in the same query.
 
 ``` php 
-use Correios\Correios;
+use Jerfeson\Correios;
 
 require 'vendor/autoload.php';
 
