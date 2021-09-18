@@ -1,6 +1,6 @@
 # Correios for PHP
 
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.2-8892BF.svg)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-8892BF.svg)](https://php.net/)
 
 This library facilitates the integration with the Correios delivery services of Brazil on php
 
