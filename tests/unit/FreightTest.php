@@ -83,7 +83,8 @@ class FreightTest extends Unit
     {
         $this->client->freight()->item(10, 1, 10, 10)
             ->item(10, 2.5, 10, 10)
-            ->item(10, 2, 10, 10);
+            ->item(10, 2, 10, 10)
+        ;
 
         $this->assertPayloadHas('nVlAltura', 5.5);
     }
@@ -96,7 +97,8 @@ class FreightTest extends Unit
     {
         $this->client->freight()->item(10, 10, 1, 10)
             ->item(10, 10, 2.5, 10)
-            ->item(10, 10, 2, 10);
+            ->item(10, 10, 2, 10)
+        ;
 
         $this->assertPayloadHas('nVlComprimento', 2.5);
     }
@@ -109,7 +111,8 @@ class FreightTest extends Unit
     {
         $this->client->freight()->item(10, 10, 10, 1)
             ->item(10, 10, 10, 2.5)
-            ->item(10, 10, 10, 2);
+            ->item(10, 10, 10, 2)
+        ;
 
         $this->assertPayloadHas('nVlPeso', 5.5);
     }
@@ -122,7 +125,8 @@ class FreightTest extends Unit
     {
         $this->client->freight()->item(50, 50, 50, 1)
             ->item(50, 50, 50, 2.5)
-            ->item(50, 50, 50, 2);
+            ->item(50, 50, 50, 2)
+        ;
 
         $this->assertPayloadHas('nVlPeso', 62.5);
     }
@@ -138,7 +142,8 @@ class FreightTest extends Unit
 
         $this->assertInstanceOf($this->client->freight()::class, $this->client->freight()->credentials($code, $password));
         $this->assertPayloadHas('nCdEmpresa', $code)
-            ->assertPayloadHas('sDsSenha', $password);
+            ->assertPayloadHas('sDsSenha', $password)
+        ;
     }
 
     /**
@@ -206,10 +211,10 @@ class FreightTest extends Unit
      * @param mixed $value
      * @param mixed $service
      *
-     * @return FreightTest
      * @throws NotFoundException
-     *
      * @throws DependencyException
+     *
+     * @return FreightTest
      */
     protected function assertPayloadHas($key, $value = null, $service = FreightType::SEDEX): static
     {

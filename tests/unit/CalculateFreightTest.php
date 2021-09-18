@@ -1,11 +1,11 @@
 <?php
 
 use Codeception\Test\Unit;
-use Jerfeson\Correios\Correios;
-use Jerfeson\Correios\Enum\FreightType;
 use DI\DependencyException;
 use DI\NotFoundException;
 use GuzzleHttp\Exception\GuzzleException;
+use Jerfeson\Correios\Correios;
+use Jerfeson\Correios\Enum\FreightType;
 
 /**
  * Class CalculateFreightTest.
