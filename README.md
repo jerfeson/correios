@@ -1,6 +1,10 @@
 # Correios for PHP
 
+[![Latest Version on Packagist](https://img.shields.io/github/release/jerfeson/correios.svg)](https://img.shields.io/github/v/release/jerfeson/correios)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-8892BF.svg)](https://php.net/)
+[![build-check](https://github.com/jerfeson/correios/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/jerfeson/correios/actions/workflows/build.yml)
+![GitHub all releases](https://img.shields.io/github/downloads/jerfeson/correios/total)
 
 This library facilitates the integration with the Correios delivery services of Brazil on php
 
