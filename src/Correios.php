@@ -10,7 +10,6 @@ use Exception;
 use GuzzleHttp\Client;
 use Jerfeson\Correios\Service\Address;
 use Jerfeson\Correios\Service\Freight;
-use RuntimeException;
 
 /**
  * Class Correios.
