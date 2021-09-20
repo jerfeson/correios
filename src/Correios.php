@@ -65,18 +65,4 @@ class Correios
     {
         return $this->container->get(Freight::class);
     }
-
-    /**
-     * Load any initializers configured.
-     */
-    private static function loadInitializers()
-    {
-        foreach (self::loadArrayFile(CONFIG_PATH . 'initializers.php') as $class) {
-            if (!in_array(InitializerInterface::class, class_implements($class))) {
-                throw new RuntimeException('Invalid initializer provided: ' . $class);
-            }
-
-            $class::initialize(self::getContainer());
-        }
-    }
 }
