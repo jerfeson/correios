@@ -8,7 +8,6 @@ use DI\DependencyException;
 use DI\NotFoundException;
 use Exception;
 use GuzzleHttp\Client;
-use Jerfeson\Correios\Initializer\InitializerInterface;
 use Jerfeson\Correios\Service\Address;
 use Jerfeson\Correios\Service\Freight;
 use RuntimeException;
